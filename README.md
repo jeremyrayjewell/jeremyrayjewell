@@ -45,17 +45,16 @@ Skills: Enumeration • Web Exploitation • Bash • Python Automation
 ---
 
 ## 📊 Impact & Achievements
-- ✅ 100% completion: Google Cybersecurity Certificate  
-- 🔄 Consistent weekly progress: IBM Cybersecurity Analyst Certificate  
+- ✅ 100% completion: Google Cybersecurity Certificate, IBM Cybersecurity Analyst Certificate  
 - 🔓 Completed OverTheWire Bandit series; progressing through Natas  
-- 📜 Security+ exam voucher locked for Nov 2025  
+- 📜 Security+ exam for Nov 2025  
 - ✍️ Built GitHub as a public “learning in the open” portfolio  
 
 ---
 
-## 📜 Certifications (in progress & earned)
+## 📜 Certifications
 - Google Cybersecurity Professional Certificate ✅  
-- IBM Cybersecurity Analyst Professional Certificate (in progress)  
+- IBM Cybersecurity Analyst Professional Certificate ✅
 - CompTIA Security+ (scheduled)  
 - [future target: Splunk, AWS Cloud, Linux certs]  
 
@@ -69,22 +68,20 @@ Nmap • Metasploit • Aircrack • Hashcat • Wireshark • Burp Suite • tm
 Python • Bash • GitHub Actions • React • Three.js • Node.js  
 
 ### Systems
-Kali Linux • BlackArch • Ubuntu • Windows  
+Kali Linux • Arch • Ubuntu • Windows  
 
 ---
 
 ## 🎙️ Community & Background
 - 🌎 10+ years as an **educator** — thousands of lessons taught worldwide  
-- ✍️ Published essays, articles, and creative work (HackerNoon, dev.to, etc.)  
-- 🎵 Electronic musician and multimedia artist (Aggregatron Records)  
-- 💬 Fluent in **Spanish** (living in Bogotá, Colombia)  
+- ✍️ Published essays, articles, and creative work (HackerNoon, dev.to, etc.)   
+- 💬 Fluent in **Spanish**  
 
 ---
 
 ## 🔥 Fun Facts
 - 🎶 My synthesizers live in both code and hardware (555 timer circuits + React WebAudio synths)  
 - 📖 Background in philosophy and history of ideas, now applied to threat analysis and problem-solving  
-- 🐕🐈 Proud caretaker of two dogs and three cats  
 - 🌐 Career pivot is fueled by open learning, persistence, and a love of breaking things (safely)  
 
 ---
