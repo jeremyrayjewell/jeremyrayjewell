@@ -97,4 +97,6 @@ Kali Linux • Arch • Ubuntu • Windows
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jeremyrayjewell&show_icons=true&theme=tokyonight)
 
 🐍 Contribution Snake  
-![Snake animation](https://github.com/jeremyrayjewell/jeremyrayjewell/blob/output/github-contribution-grid-snake.svg)
+![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+
