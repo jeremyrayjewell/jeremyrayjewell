@@ -53,10 +53,6 @@ Skills: Enumeration • Web Exploitation • Bash • Python Automation
 ---
 
 ## 📜 Certifications
-- Google Cybersecurity Professional Certificate ✅  
-- IBM Cybersecurity Analyst Professional Certificate ✅  
-- CompTIA Security+ (scheduled)  
-
 <!-- Badges for the items above (visual only; same claims) -->
 ![Google Cybersecurity Certificate](https://img.shields.io/badge/-Google%20Cybersecurity%20Certificate-4285F4?logo=google&logoColor=white)
 ![IBM Cybersecurity Analyst](https://img.shields.io/badge/-IBM%20Cybersecurity%20Analyst-052FAD?logo=ibm&logoColor=white)
@@ -66,8 +62,6 @@ Skills: Enumeration • Web Exploitation • Bash • Python Automation
 
 ## 🛠️ Tools & Tech
 ### Security
-Nmap • Metasploit • Aircrack • Hashcat • Wireshark • Burp Suite • tmux • OpenSSH  
-
 <!-- Visual badges reflecting the same list -->
 ![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?logo=wireshark&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/-Burp%20Suite-FF6F00?logo=burpsuite&logoColor=white)
@@ -79,8 +73,6 @@ Nmap • Metasploit • Aircrack • Hashcat • Wireshark • Burp Suite • tm
 ![OpenSSH](https://img.shields.io/badge/-OpenSSH-333333)
 
 ### Dev & Automation
-Python • Bash • GitHub Actions • React • Three.js • Node.js  
-
 <!-- Visual badges reflecting the same list -->
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/-Bash-4EAA25?logo=gnu-bash&logoColor=white)
@@ -90,8 +82,6 @@ Python • Bash • GitHub Actions • React • Three.js • Node.js
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
 
 ### Systems
-Kali Linux • Arch • Ubuntu • Windows  
-
 <!-- Visual badges reflecting the same list -->
 ![Kali Linux](https://img.shields.io/badge/-Kali%20Linux-557C94?logo=kali&logoColor=white)
 ![Arch Linux](https://img.shields.io/badge/-Arch%20Linux-1793D1?logo=archlinux&logoColor=white)
