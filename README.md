@@ -54,9 +54,13 @@ Skills: Enumeration • Web Exploitation • Bash • Python Automation
 
 ## 📜 Certifications
 - Google Cybersecurity Professional Certificate ✅  
-- IBM Cybersecurity Analyst Professional Certificate ✅
+- IBM Cybersecurity Analyst Professional Certificate ✅  
 - CompTIA Security+ (scheduled)  
-- [future target: Splunk, AWS Cloud, Linux certs]  
+
+<!-- Badges for the items above (visual only; same claims) -->
+![Google Cybersecurity Certificate](https://img.shields.io/badge/-Google%20Cybersecurity%20Certificate-4285F4?logo=google&logoColor=white)
+![IBM Cybersecurity Analyst](https://img.shields.io/badge/-IBM%20Cybersecurity%20Analyst-052FAD?logo=ibm&logoColor=white)
+![CompTIA Security%2B (scheduled)](https://img.shields.io/badge/-CompTIA%20Security%2B%20(scheduled)-E62A36?logo=comptia&logoColor=white)
 
 ---
 
@@ -64,11 +68,35 @@ Skills: Enumeration • Web Exploitation • Bash • Python Automation
 ### Security
 Nmap • Metasploit • Aircrack • Hashcat • Wireshark • Burp Suite • tmux • OpenSSH  
 
+<!-- Visual badges reflecting the same list -->
+![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?logo=wireshark&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/-Burp%20Suite-FF6F00?logo=burpsuite&logoColor=white)
+![Nmap](https://img.shields.io/badge/-Nmap-2E6F9A)
+![Metasploit](https://img.shields.io/badge/-Metasploit-5E7D4D)
+![Aircrack-ng](https://img.shields.io/badge/-Aircrack--ng-555555)
+![Hashcat](https://img.shields.io/badge/-Hashcat-444444)
+![tmux](https://img.shields.io/badge/-tmux-1BB91F)
+![OpenSSH](https://img.shields.io/badge/-OpenSSH-333333)
+
 ### Dev & Automation
 Python • Bash • GitHub Actions • React • Three.js • Node.js  
 
+<!-- Visual badges reflecting the same list -->
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=000)
+![Three.js](https://img.shields.io/badge/-Three.js-000000)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
+
 ### Systems
 Kali Linux • Arch • Ubuntu • Windows  
+
+<!-- Visual badges reflecting the same list -->
+![Kali Linux](https://img.shields.io/badge/-Kali%20Linux-557C94?logo=kali&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/-Arch%20Linux-1793D1?logo=archlinux&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?logo=ubuntu&logoColor=white)
+![Windows](https://img.shields.io/badge/-Windows-0078D6?logo=windows&logoColor=white)
 
 ---
 
@@ -99,4 +127,3 @@ Kali Linux • Arch • Ubuntu • Windows
 🐍 Contribution Snake  
 ![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)
 ![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
-
