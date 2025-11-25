@@ -4,6 +4,12 @@ I’m Jeremy — an educator, technologist, and Security+ certified professional
 
 I currently teach ESL remotely while transitioning into **remote U.S. help desk, security operations, and analyst roles**. I document my progress in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+
 # 🚀 Current Focus
 
 I’m currently focused on **blue-team fundamentals and remote support workflows**, especially:
@@ -86,6 +92,8 @@ Coverage of network security, threat intelligence, and security operations with 
 
 # 🛠️ Skills & Tools
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeremyrayjewell&layout=compact&theme=tokyonight)
+
 ### Security & Blue Team  
 - Network scanning and recon: Wireshark · Nmap  
 - Web and application testing: Burp Suite (basic), common web vulns  
@@ -136,6 +144,8 @@ I write essays, technical notes, and creative work, and I’m fluent in Spanish.
 # 📊 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jeremyrayjewell&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeremyrayjewell&layout=compact&theme=tokyonight)
 
 ![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)  
 ![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
