@@ -116,8 +116,6 @@ Coverage of network security, threat intelligence, and security operations with 
 
 # 🛠️ Skills & Tools
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeremyrayjewell&layout=compact&theme=tokyonight)
-
 ### Security & Blue Team  
 - Network scanning and recon: Wireshark · Nmap  
 - Web and application testing: Burp Suite (basic), common web vulns  
