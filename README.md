@@ -163,10 +163,5 @@ I write essays, technical notes, and creative work, and I’m fluent in Spanish.
 [LinkedIn](https://www.linkedin.com/in/jeremyrayjewell)  
 [HackerNoon](https://hackernoon.com/u/jeremyrayjewell)
 
----
-
-# 📊 GitHub Stats
-
-
 ![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)  
 ![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
