@@ -6,7 +6,7 @@ I currently teach ESL remotely while transitioning into **remote U.S. help desk,
 
 ---
 
-# 🚨 Flagship Project – Mini SIEM Honeypot Dashboard
+# 🚨 Key Project – Mini SIEM Honeypot Dashboard
 
 ### 🛡️ Mini SIEM Dashboard & Honeypot (Python + JS)
 A small but complete **honeypot + mini-SIEM stack**:
