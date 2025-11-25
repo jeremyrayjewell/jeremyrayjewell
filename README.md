@@ -64,7 +64,7 @@ Structured walkthroughs of OverTheWire wargames with a focus on **methodical enu
 
 ---
 
-### 🎛️ Three.js + WebAudio Experiments
+### 🎛️ [Three.js + WebAudio Experiments](https://github.com/jeremyrayjewell/webaudioapi_aggregatron)
 Browser-based synthesizers, CRT-style shader overlays, audio-reactive visuals, and algorithmic music tools built with JavaScript and React.
 
 **Skills:** JavaScript, React, Three.js, Web Audio API, creative coding, UI design
@@ -120,7 +120,7 @@ I write essays, technical notes, and creative work, and I’m fluent in Spanish.
 
 # 🔧 Outside the Screen
 
-- I build synthesizers in both code and hardware (including 555-timer noise circuits and small DIY audio projects).  
+- [I build synthesizers in both code and hardware (including 555-timer noise circuits and small DIY audio projects).](https://github.com/jeremyrayjewell/soundmachines)  
 - I enjoy breaking things safely, understanding them deeply, and rebuilding them with clarity and better documentation.
 
 ---
