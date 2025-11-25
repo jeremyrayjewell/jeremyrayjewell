@@ -1,76 +1,141 @@
 # 👋 Welcome
 
-I’m Jeremy — an educator, technologist, and newly certified Security+ professional building a career in cybersecurity and IT support. My work blends analysis, troubleshooting, creative coding, and hands-on security practice. I document everything in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
+I’m Jeremy — an educator, technologist, and Security+ certified professional building a career in cybersecurity and remote IT support. My work blends analysis, troubleshooting, creative coding, and hands-on security practice, with an emphasis on **logs, SIEM-style workflows, and practical blue-team skills**.
 
-I currently teach ESL remotely while developing the experience and portfolio to transition into remote U.S. help desk, security operations, and analyst roles.
+I currently teach ESL remotely while transitioning into **remote U.S. help desk, security operations, and analyst roles**. I document my progress in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
+
+---
+
+# 🚨 Flagship Project – Mini SIEM Honeypot Dashboard
+
+### 🛡️ Mini SIEM Dashboard & Honeypot (Python + JS)
+A small but complete **honeypot + mini-SIEM stack**:
+
+- **Backend:** Python (Flask) app that runs fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports) and appends structured events to `events.json`.
+- **Event schema:** `timestamp`, `ip`, `port`, `src_port`, `protocol`, `event_type`, `banner_sent`, `user_agent`, `message`.
+- **Dashboard:** Modern JavaScript frontend that polls `/api/stats` and visualizes:
+  - total events
+  - top attacking IPs
+  - ports/protocol distribution
+  - recent events table with full metadata
+- **Ops / deployment:** Containerized and deployed as a small cloud service with a static dashboard frontend and a Python API backend.
+
+This project is designed to look and feel like a **tiny SOC tool**: I can generate malicious-looking traffic, watch events arrive in near real time, and practice log triage, basic enrichment, and pattern recognition.
+
+**Skills:** Python (Flask), JSON logging, basic SIEM concepts, honeypots, Docker, HTTP APIs, JavaScript dashboards, Git, cloud deployment workflows
+
+> Repo: `mini-siem-dashboard` (see that repo’s README for live demo details and implementation notes)
 
 ---
 
 # 🚀 Current Focus
 
-I concentrate on strengthening foundational security and IT support skills through hands-on practice. My work includes security operations fundamentals, log analysis, endpoint troubleshooting, Linux workflows, scripting, virtualization, and small-scale incident response exercises. I maintain an active home lab and document structured learning in GitHub for clarity and accountability.
+I’m currently focused on **blue-team fundamentals and remote support workflows**, especially:
+
+- Running and extending my **mini SIEM / honeypot** for continuous log analysis practice  
+- Troubleshooting in **Linux and Windows** environments (connectivity, users, permissions, services)
+- Practicing **ticket-style problem solving**: clear problem statements, steps taken, and outcomes
+- Building small tools and labs in **Python and JavaScript** to deepen understanding of:
+  - networking and protocols  
+  - authentication and access control  
+  - encryption and secure design  
+
+I maintain an active home lab and use GitHub to keep a **transparent, chronological record** of what I’m learning and building.
 
 ---
 
 # 💼 Highlighted Projects
 
-### 🔐 cyber_journal
-A continuously updated portfolio of labs, notes, and experiments covering networking, Linux, SIEM operations, cryptography, threat analysis, and small-scale exploitation research.  
-**Skills:** Linux administration, documentation, version control, cybersecurity fundamentals
+### 📓 cyber_journal
+A continuously updated portfolio of labs, notes, and experiments covering networking, Linux, SIEM operations, cryptography, threat analysis, and exploitation fundamentals.
 
-### 🖥️ Three.js + WebAudio Experiments
-Browser-based synthesizers, CRT-style shader overlays, audio-reactive visuals, and algorithmic music tools built with JavaScript and React.  
-**Skills:** JavaScript, React, Three.js, Web Audio API, creative coding
+- OverTheWire wargames (Bandit, Natas) with structured write-ups
+- Packet capture notes, log snippets, and tool usage examples
+- Course notes from Google, IBM, and Security+ prep consolidated into usable references
 
-### 🧪 Cipher Graphs (Python)
-Visual explorations of RSA, DSA, Curve25519, and Ed25519 to deepen understanding of cryptographic structure and behavior.  
-**Skills:** Python, cryptography, algorithm visualization
-
-### 🛡️ Natas & Bandit Write-ups
-Structured walkthroughs of OverTheWire wargames with custom automation scripts and detailed analysis of common exploitation techniques.  
-**Skills:** enumeration, Linux, Bash, Python automation
+**Skills:** Linux administration, documentation, version control, cybersecurity fundamentals, research workflow
 
 ---
 
-# 📊 Impact & Achievements
+### 🛡️ Natas & Bandit Write-ups
+Structured walkthroughs of OverTheWire wargames with a focus on **methodical enumeration and root-cause explanation** rather than just answers.
 
-I have completed multiple structured cybersecurity programs, built a home lab from scratch, and maintained a “learning in public” portfolio documenting real progress and technical growth. I routinely integrate IT support tasks, scripting, SIEM workflows, and troubleshooting practice into my study pipeline. My Security+ certification now anchors this trajectory with validated credentials.
+- Layered enumeration strategies
+- Common misconfigurations and insecure defaults
+- Simple automation with small Python/Bash snippets
+
+**Skills:** enumeration, Linux CLI, Bash, Python automation, web & system exploitation basics
+
+---
+
+### 🧪 Cipher Graphs (Python)
+Visual explorations of RSA, DSA, Curve25519, and Ed25519 to make the **structure of cryptographic algorithms** more intuitive.
+
+- Maps mathematical behavior to visual patterns
+- Helps bridge the gap between theory and practical security decisions
+
+**Skills:** Python, cryptography concepts, algorithm visualization, matplotlib
+
+---
+
+### 🎛️ Three.js + WebAudio Experiments
+Browser-based synthesizers, CRT-style shader overlays, audio-reactive visuals, and algorithmic music tools built with JavaScript and React.
+
+**Skills:** JavaScript, React, Three.js, Web Audio API, creative coding, UI design
 
 ---
 
 # 📜 Certifications
 
 ![CompTIA Security+](https://img.shields.io/badge/-CompTIA%20Security%2B-E62A36?logo=comptia&logoColor=white)  
+Vendor-neutral baseline for security operations, risk management, incident response, and secure architecture.
+
 ![Google Cybersecurity Certificate](https://img.shields.io/badge/-Google%20Cybersecurity%20Certificate-4285F4?logo=google&logoColor=white)  
-![IBM Cybersecurity Analyst](https://img.shields.io/badge/-IBM%20Cybersecurity%20Analyst-052FAD?logo=ibm&logoColor=white)
+Hands-on labs with SIEM tools, incident reports, detection engineering basics, and SOC-style workflows.
+
+![IBM Cybersecurity Analyst](https://img.shields.io/badge/-IBM%20Cybersecurity%20Analyst-052FAD?logo=ibm&logoColor=white)  
+Coverage of network security, threat intelligence, and security operations with a focus on practical analysis and reporting.
 
 ---
 
-# 🛠️ Tools & Tech
+# 🛠️ Skills & Tools
 
-### Security  
-Wireshark · Burp Suite · Nmap · Metasploit · Aircrack-ng · Hashcat · tmux · OpenSSH
+### Security & Blue Team  
+- Network scanning and recon: Wireshark · Nmap  
+- Web and application testing: Burp Suite (basic), common web vulns  
+- Passwords & wireless: Aircrack-ng · Hashcat  
+- Access & workflows: OpenSSH · tmux · VPN / SSH tunneling basics  
+- Honeypots & SIEM-style logging via my **Mini SIEM Dashboard**
 
-### Dev & Automation  
-Python · Bash · React · Three.js · Node.js · Git · GitHub Actions
+### Programming & Automation  
+- **Python:** scripting, data parsing, log processing, small CLI tools  
+- **JavaScript / TypeScript:** frontend dashboards, simple APIs  
+- React · Three.js · Node.js  
+- Git · GitHub Actions (basic CI workflows)
 
-### Systems  
-Kali Linux · Arch Linux · Ubuntu · Windows  
-VirtualBox · WSL · basic scripting workflows
+### Systems & Platforms  
+- Kali Linux · Arch Linux · Ubuntu · Windows  
+- VirtualBox · WSL  
+- Basic server administration and service troubleshooting
 
 ---
 
-# 🎙️ Community & Background
+# 🎙️ Background
 
-I have over a decade of experience as an educator, delivering thousands of remote sessions involving real-time troubleshooting, communication under pressure, and cross-cultural interaction. I write essays, technical notes, and creative work, and I’m fluent in Spanish.
+I have over a decade of experience as an educator, delivering thousands of remote sessions that required:
+
+- Calm, clear communication under pressure  
+- Rapid troubleshooting of audio/video/connection issues  
+- Working with learners and stakeholders across cultures and time zones  
+
+I write essays, technical notes, and creative work, and I’m fluent in Spanish. My academic background in philosophy and history of ideas informs how I approach **threat modeling, systems thinking, and root-cause analysis**.
 
 ---
 
-# 🔥 Fun Facts
+# 🔧 Outside the Screen
 
-I build synthesizers in both code and hardware (including 555-timer noise circuits).  
-My academic background in philosophy and history of ideas informs how I approach threat analysis, systems thinking, and security problem-solving.  
-I enjoy breaking things safely, understanding them deeply, and rebuilding them with clarity.
+- I build synthesizers in both code and hardware (including 555-timer noise circuits and small DIY audio projects).  
+- I enjoy breaking things safely, understanding them deeply, and rebuilding them with clarity and better documentation.
 
 ---
 
