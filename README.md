@@ -4,11 +4,35 @@ I’m Jeremy — an educator, technologist, and Security+ certified professional
 
 I currently teach ESL remotely while transitioning into **remote U.S. help desk, security operations, and analyst roles**. I document my progress in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
 
+### ⚙️ Tech Stack
+
+**Languages & Scripting**  
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
+
+**Security & Networking**  
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?logo=kalilinux&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-004B87?logo=nmap&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6F00?logo=burpsuite&logoColor=white)
+![Hashcat](https://img.shields.io/badge/Hashcat-800000?logo=hashnode&logoColor=white)
+
+**Web, Apps & APIs**  
 ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?logo=threedotjs&logoColor=white)
+
+**Platforms & Tooling**  
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?logo=virtualbox&logoColor=white)
+
 
 # 🚀 Current Focus
 
@@ -143,9 +167,6 @@ I write essays, technical notes, and creative work, and I’m fluent in Spanish.
 
 # 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jeremyrayjewell&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeremyrayjewell&layout=compact&theme=tokyonight)
 
 ![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)  
 ![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
