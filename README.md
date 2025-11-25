@@ -4,30 +4,6 @@ I’m Jeremy — an educator, technologist, and Security+ certified professional
 
 I currently teach ESL remotely while transitioning into **remote U.S. help desk, security operations, and analyst roles**. I document my progress in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
 
----
-
-# 🚨 Key Project – Mini SIEM Honeypot Dashboard
-
-### 🛡️ Mini SIEM Dashboard & Honeypot (Python + JS)
-A small but complete **honeypot + mini-SIEM stack**:
-
-- **Backend:** Python (Flask) app that runs fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports) and appends structured events to `events.json`.
-- **Event schema:** `timestamp`, `ip`, `port`, `src_port`, `protocol`, `event_type`, `banner_sent`, `user_agent`, `message`.
-- **Dashboard:** Modern JavaScript frontend that polls `/api/stats` and visualizes:
-  - total events
-  - top attacking IPs
-  - ports/protocol distribution
-  - recent events table with full metadata
-- **Ops / deployment:** Containerized and deployed as a small cloud service with a static dashboard frontend and a Python API backend.
-
-This project is designed to look and feel like a **tiny SOC tool**: I can generate malicious-looking traffic, watch events arrive in near real time, and practice log triage, basic enrichment, and pattern recognition.
-
-**Skills:** Python (Flask), JSON logging, basic SIEM concepts, honeypots, Docker, HTTP APIs, JavaScript dashboards, Git, cloud deployment workflows
-
-> Repo: `mini-siem-dashboard` (see that repo’s README for live demo details and implementation notes)
-
----
-
 # 🚀 Current Focus
 
 I’m currently focused on **blue-team fundamentals and remote support workflows**, especially:
@@ -44,9 +20,29 @@ I maintain an active home lab and use GitHub to keep a **transparent, chronologi
 
 ---
 
-# 💼 Highlighted Projects
+# 🚨 Key Projects 
 
-### 📓 cyber_journal
+### 🛡️ [Mini SIEM Dashboard & Honeypot (Python + JS)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
+A small but complete **honeypot + mini-SIEM stack**:
+
+- **Backend:** Python (Flask) app that runs fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports) and appends structured events to `events.json`.
+- **Event schema:** `timestamp`, `ip`, `port`, `src_port`, `protocol`, `event_type`, `banner_sent`, `user_agent`, `message`.
+- **Dashboard:** Modern JavaScript frontend that polls `/api/stats` and visualizes:
+  - total events
+  - top attacking IPs
+  - ports/protocol distribution
+  - recent events table with full metadata
+- **Ops / deployment:** Containerized and deployed as a small cloud service with a static dashboard frontend and a Python API backend.
+
+This project is designed to look and feel like a **tiny SOC tool**: I can generate malicious-looking traffic, watch events arrive in near real time, and practice log triage, basic enrichment, and pattern recognition.
+
+**Skills:** Python (Flask), JSON logging, basic SIEM concepts, honeypots, Docker, HTTP APIs, JavaScript dashboards, Git, cloud deployment workflows
+
+> [Repo: `mini-siem-dashboard` (see that repo’s README for live demo details and implementation notes)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
+
+---
+
+### 📓 [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal)
 A continuously updated portfolio of labs, notes, and experiments covering networking, Linux, SIEM operations, cryptography, threat analysis, and exploitation fundamentals.
 
 - OverTheWire wargames (Bandit, Natas) with structured write-ups
@@ -57,7 +53,7 @@ A continuously updated portfolio of labs, notes, and experiments covering networ
 
 ---
 
-### 🛡️ Natas & Bandit Write-ups
+### 🛡️ [CTF Write-ups](https://github.com/jeremyrayjewell/cyber_journal/tree/main/writeups)
 Structured walkthroughs of OverTheWire wargames with a focus on **methodical enumeration and root-cause explanation** rather than just answers.
 
 - Layered enumeration strategies
@@ -65,16 +61,6 @@ Structured walkthroughs of OverTheWire wargames with a focus on **methodical enu
 - Simple automation with small Python/Bash snippets
 
 **Skills:** enumeration, Linux CLI, Bash, Python automation, web & system exploitation basics
-
----
-
-### 🧪 Cipher Graphs (Python)
-Visual explorations of RSA, DSA, Curve25519, and Ed25519 to make the **structure of cryptographic algorithms** more intuitive.
-
-- Maps mathematical behavior to visual patterns
-- Helps bridge the gap between theory and practical security decisions
-
-**Skills:** Python, cryptography concepts, algorithm visualization, matplotlib
 
 ---
 
