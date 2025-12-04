@@ -1,10 +1,12 @@
-# 👋 Welcome
+# Welcome
 
-I’m Jeremy — an educator, technologist, and Security+ certified professional building a career in cybersecurity and remote IT support. My work blends analysis, troubleshooting, creative coding, and hands-on security practice, with an emphasis on **logs, SIEM-style workflows, and practical blue-team skills**.
+I’m Jeremy. I teach, write code, run labs, and work toward a full-time role in cybersecurity and remote IT support. Most of my work is practical: reading logs, troubleshooting systems, testing assumptions, and building small tools to understand how things behave.  
 
-I currently teach ESL remotely while transitioning into **remote U.S. help desk, security operations, and analyst roles**. I document my progress in my [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal) to show real process, not just polished results.
+GitHub is where I keep the record — experiments, fixes, and notes — not a polished portfolio.
 
-### ⚙️ Tech Stack
+---
+
+# Tech Stack
 
 **Languages & Scripting**  
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -33,133 +35,96 @@ I currently teach ESL remotely while transitioning into **remote U.S. help desk,
 ![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?logo=virtualbox&logoColor=white)
 
+# Current Focus
 
-# 🚀 Current Focus
+I’m concentrating on blue-team fundamentals and common support workflows:
 
-I’m currently focused on **blue-team fundamentals and remote support workflows**, especially:
+- Extending my mini-SIEM / honeypot and reviewing the traffic it collects  
+- Troubleshooting Linux and Windows (networking, permissions, services)  
+- Practicing clear “problem → steps → outcome” documentation  
+- Building Python and JavaScript tools for:
+  - network behavior  
+  - simple authentication flows  
+  - encryption basics  
+  - log parsing and filtering
 
-- Running and extending my **mini SIEM / honeypot** for continuous log analysis practice  
-- Troubleshooting in **Linux and Windows** environments (connectivity, users, permissions, services)
-- Practicing **ticket-style problem solving**: clear problem statements, steps taken, and outcomes
-- Building small tools and labs in **Python and JavaScript** to deepen understanding of:
-  - networking and protocols  
-  - authentication and access control  
-  - encryption and secure design  
-
-I maintain an active home lab and use GitHub to keep a **transparent, chronological record** of what I’m learning and building.
+I run a home lab and use GitHub to track the work chronologically.
 
 ---
 
-# 🚨 Key Projects 
+# Key Projects
 
-### 🛡️ [Mini SIEM Dashboard & Honeypot (Python + JS)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
-A small but complete **honeypot + mini-SIEM stack**:
+##  [Mini SIEM Dashboard & Honeypot (Python + JS)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
+Python + JavaScript
 
-- **Backend:** Python (Flask) app that runs fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports) and appends structured events to `events.json`.
-- **Event schema:** `timestamp`, `ip`, `port`, `src_port`, `protocol`, `event_type`, `banner_sent`, `user_agent`, `message`.
-- **Dashboard:** Modern JavaScript frontend that polls `/api/stats` and visualizes:
-  - total events
-  - top attacking IPs
-  - ports/protocol distribution
-  - recent events table with full metadata
-- **Ops / deployment:** Containerized and deployed as a small cloud service with a static dashboard frontend and a Python API backend.
+A small system that exposes fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports), writes structured events to JSON, and feeds a lightweight JS dashboard.
 
-This project is designed to look and feel like a **tiny SOC tool**: I can generate malicious-looking traffic, watch events arrive in near real time, and practice log triage, basic enrichment, and pattern recognition.
+- Backend: Flask with custom TCP listeners  
+- Event fields: timestamp, ip, port, src_port, protocol, event_type, banner_sent, user_agent, message  
+- Frontend: polls `/api/stats` for totals, top IPs, protocol/port breakdowns, and recent events  
+- Deployment: containerized; runs as a small cloud service with a static dashboard
 
-**Skills:** Python (Flask), JSON logging, basic SIEM concepts, honeypots, Docker, HTTP APIs, JavaScript dashboards, Git, cloud deployment workflows
+It serves as a compact SOC-style lab for generating traffic and practicing log triage.
 
 > [Repo: `mini-siem-dashboard` (see that repo’s README for live demo details and implementation notes)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
 
 ---
 
-### 📓 [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal)
-A continuously updated portfolio of labs, notes, and experiments covering networking, Linux, SIEM operations, cryptography, threat analysis, and exploitation fundamentals.
+## [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal)
 
-- OverTheWire wargames (Bandit, Natas) with structured write-ups
-- Packet capture notes, log snippets, and tool usage examples
-- Course notes from Google, IBM, and Security+ prep consolidated into usable references
-
-**Skills:** Linux administration, documentation, version control, cybersecurity fundamentals, research workflow
+A running log of labs, notes, wargames, packet captures, troubleshooting sessions, and anything else that contributes to understanding systems and protocols.
 
 ---
 
-### 🛡️ [CTF Write-ups](https://github.com/jeremyrayjewell/cyber_journal/tree/main/writeups)
-Structured walkthroughs of OverTheWire wargames with a focus on **methodical enumeration and root-cause explanation** rather than just answers.
+## [CTF Write-ups](https://github.com/jeremyrayjewell/cyber_journal/tree/main/writeups)
 
-- Layered enumeration strategies
-- Common misconfigurations and insecure defaults
-- Simple automation with small Python/Bash snippets
-
-**Skills:** enumeration, Linux CLI, Bash, Python automation, web & system exploitation basics
+TryHackMe, OverTheWire, OWASP, and related exercises with emphasis on enumeration and root-cause thinking rather than shortcuts or “just the flags.”
 
 ---
 
-### 🎛️ [Three.js + WebAudio Experiments](https://github.com/jeremyrayjewell/webaudioapi_aggregatron)
-Browser-based synthesizers, CRT-style shader overlays, audio-reactive visuals, and algorithmic music tools built with JavaScript and React.
+## [Three.js + WebAudio Experiments](https://github.com/jeremyrayjewell/webaudioapi_aggregatron)
 
-**Skills:** JavaScript, React, Three.js, Web Audio API, creative coding, UI design
+Browser-based synthesizers, algorithmic music tools, shader experiments, and other creative coding projects built with JS and React.
 
 ---
 
-# 📜 Certifications
+# Certifications
 
 ![CompTIA Security+](https://img.shields.io/badge/-CompTIA%20Security%2B-E62A36?logo=comptia&logoColor=white)  
-Vendor-neutral baseline for security operations, risk management, incident response, and secure architecture.
 
 ![Google Cybersecurity Certificate](https://img.shields.io/badge/-Google%20Cybersecurity%20Certificate-4285F4?logo=google&logoColor=white)  
-Hands-on labs with SIEM tools, incident reports, detection engineering basics, and SOC-style workflows.
 
 ![IBM Cybersecurity Analyst](https://img.shields.io/badge/-IBM%20Cybersecurity%20Analyst-052FAD?logo=ibm&logoColor=white)  
-Coverage of network security, threat intelligence, and security operations with a focus on practical analysis and reporting.
 
 ---
 
-# 🛠️ Skills & Tools
+# Skills & Tools
 
-### Security & Blue Team  
-- Network scanning and recon: Wireshark · Nmap  
-- Web and application testing: Burp Suite (basic), common web vulns  
-- Passwords & wireless: Aircrack-ng · Hashcat  
-- Access & workflows: OpenSSH · tmux · VPN / SSH tunneling basics  
-- Honeypots & SIEM-style logging via my **Mini SIEM Dashboard**
+**Security / Blue Team**  
+Network scanning · packet analysis · basic web testing · password and wireless tools · SSH workflows · VPN and tunneling basics · honeypot and log analysis
 
-### Programming & Automation  
-- **Python:** scripting, data parsing, log processing, small CLI tools  
-- **JavaScript / TypeScript:** frontend dashboards, simple APIs  
-- React · Three.js · Node.js  
-- Git · GitHub Actions (basic CI workflows)
+**Programming / Automation**  
+Python scripting · log parsing · CLI tools · JavaScript/TypeScript · simple APIs · React · Three.js · Git · CI basics
 
-### Systems & Platforms  
-- Kali Linux · Arch Linux · Ubuntu · Windows  
-- VirtualBox · WSL  
-- Basic server administration and service troubleshooting
+**Systems**  
+Kali Linux · Ubuntu · Arch · Windows · VirtualBox · WSL · basic server administration
 
 ---
 
-# 🎙️ Background
+# Background
 
-I have over a decade of experience as an educator, delivering thousands of remote sessions that required:
-
-- Calm, clear communication under pressure  
-- Rapid troubleshooting of audio/video/connection issues  
-- Working with learners and stakeholders across cultures and time zones  
-
-I write essays, technical notes, and creative work, and I’m fluent in Spanish. My academic background in philosophy and history of ideas informs how I approach **threat modeling, systems thinking, and root-cause analysis**.
+I’ve spent more than a decade teaching online, which means constant communication, time-pressure troubleshooting, and working with different environments and constraints. I also write essays and technical notes, and I’m fluent in Spanish. My academic background in philosophy and history of ideas influences how I approach systems, problems, and threat modeling.
 
 ---
 
-# 🔧 Outside the Screen
+# Outside the Screen
 
-- [I build synthesizers in both code and hardware (including 555-timer noise circuits and small DIY audio projects).](https://github.com/jeremyrayjewell/soundmachines)  
-- I enjoy breaking things safely, understanding them deeply, and rebuilding them with clarity and better documentation.
+I build small synthesizers in hardware and software — from 555-timer circuits to WebAudio/Three.js tools — and I enjoy breaking things safely to understand them better.
 
 ---
 
-# 🌍 Find Me Online
+# Links
 
 [GitHub](https://github.com/jeremyrayjewell)  
 [LinkedIn](https://www.linkedin.com/in/jeremyrayjewell)  
 [HackerNoon](https://hackernoon.com/u/jeremyrayjewell)
-
-![Snake light](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake.svg#gh-light-mode-only)  
-![Snake dark](https://raw.githubusercontent.com/jeremyrayjewell/jeremyrayjewell/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
