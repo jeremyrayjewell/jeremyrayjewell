@@ -47,6 +47,7 @@ I’m concentrating on blue-team fundamentals and common support workflows:
   - simple authentication flows  
   - encryption basics  
   - log parsing and filtering
+- Running and testing my own DNS infrastructure (recursive DNS, DNSSEC, DNS-over-TLS)
 
 I run a home lab and use GitHub to track the work chronologically.
 
@@ -67,6 +68,33 @@ A small system that exposes fake TCP services (SSH, FTP, RDP, MySQL, Redis, Mong
 It serves as a compact SOC-style lab for generating traffic and practicing log triage.
 
 > [Repo: `mini-siem-dashboard` (see that repo’s README for live demo details and implementation notes)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
+
+---
+
+## [Private DNS-over-TLS Resolver (Unbound)](https://github.com/jeremyrayjewell/secure-dns-resolver)
+
+Unbound, DNS, TLS, DNSSEC
+
+A self-hosted recursive DNS resolver that exposes DNS-over-TLS and performs full DNSSEC validation. Built to understand how real DNS infrastructure works at the protocol level.
+
+- Recursive resolution (no forwarding by default)  
+- DNSSEC chain validation  
+- DNS-over-TLS on TCP/8853  
+- Plain DNS on 8053 for testing  
+- Containerized and deployed on Fly.io  
+- Certificates generated and injected at runtime (no secrets in repo)
+
+Used to practice:
+
+- DNS packet flow (root → TLD → authoritative)  
+- TLS configuration and verification  
+- Service deployment and health checks  
+- Testing with `dig`, `openssl`, and packet captures  
+- Understanding how VPNs affect DNS egress
+
+It’s a clean, auditable example of running real infrastructure instead of relying on managed DNS or opaque services.
+
+> [Repo: `secure-dns-resolver`](https://github.com/jeremyrayjewell/secure-dns-resolver)
 
 ---
 
