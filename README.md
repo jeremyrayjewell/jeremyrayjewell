@@ -1,8 +1,10 @@
 # Welcome
 
-I’m Jeremy. I teach, write code, run labs, and work toward a full-time role in cybersecurity and remote IT support. Most of my work is practical: reading logs, troubleshooting systems, testing assumptions, and building small tools to understand how things behave.  
+I’m Jeremy. I work across digital systems, security-oriented analysis, and browser-based media tools.
 
-GitHub is where I keep the record — experiments, fixes, and notes — not a polished portfolio.
+My work combines practical system investigation (logs, networking, infrastructure) with the development of small, focused tools for understanding how software behaves in real environments. I also build browser-based media systems using WebAudio and Three.js as part of my Aggregatron project.
+
+GitHub is where I keep a working record of these activities — experiments, tools, and notes — rather than a polished portfolio.
 
 ---
 
