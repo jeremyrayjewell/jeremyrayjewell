@@ -1,6 +1,6 @@
 # Welcome
 
-I’m Jeremy. I work across digital systems, security-oriented analysis, and browser-based media tools.
+I’m Jeremy. I build and analyze small, real-world digital systems — focusing on network behavior, security properties, and observable infrastructure.
 
 My work combines practical system investigation (logs, networking, infrastructure) with the development of small, focused tools for understanding how software behaves in real environments. I also build browser-based media systems using WebAudio and Three.js as part of my Aggregatron project.
 
@@ -60,7 +60,11 @@ so their behavior can be understood, tested, and extended.
 ![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?logo=virtualbox&logoColor=white)
 
+---
+
 # Current Focus
+
+I prioritize understanding systems end-to-end (network → service → application → user interaction), rather than isolated tools.
 
 I’m concentrating on blue-team fundamentals and common support workflows:
 
@@ -80,6 +84,19 @@ I run a home lab and use GitHub to track the work chronologically.
 
 # Key Projects
 
+# Selected Systems (Primary Work)
+
+- mini-siem-dashboard  
+- secure-dns-resolver  
+
+# Supporting Work
+
+- cyber_journal  
+- CTF write-ups  
+- Three.js + WebAudio experiments  
+
+---
+
 ##  [Mini SIEM Dashboard & Honeypot (Python + JS)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
 Python + JavaScript
 
@@ -88,7 +105,13 @@ A small system that exposes fake TCP services (SSH, FTP, RDP, MySQL, Redis, Mong
 - Backend: Flask with custom TCP listeners  
 - Event fields: timestamp, ip, port, src_port, protocol, event_type, banner_sent, user_agent, message  
 - Frontend: polls `/api/stats` for totals, top IPs, protocol/port breakdowns, and recent events  
-- Deployment: containerized; runs as a small cloud service with a static dashboard
+- Deployment: containerized; runs as a small cloud service with a static dashboard  
+- Captures repeated SSH/FTP probing patterns across multiple IP ranges  
+
+**Operational Notes**
+- Deployed as a live containerized service  
+- Generates real unsolicited traffic from internet scanning activity  
+- Logs used for repeated analysis and pattern comparison  
 
 It serves as a compact SOC-style lab for generating traffic and practicing log triage.
 
@@ -107,7 +130,12 @@ A self-hosted recursive DNS resolver that exposes DNS-over-TLS and performs full
 - DNS-over-TLS on TCP/8853  
 - Plain DNS on 8053 for testing  
 - Containerized and deployed on Fly.io  
-- Certificates generated and injected at runtime (no secrets in repo)
+- Certificates generated and injected at runtime (no secrets in repo)  
+
+**Operational Notes**
+- Public-facing resolver testable via `dig`  
+- Performs real DNSSEC validation chains  
+- TLS endpoint verifiable via `openssl`  
 
 Used to practice:
 
@@ -115,7 +143,7 @@ Used to practice:
 - TLS configuration and verification  
 - Service deployment and health checks  
 - Testing with `dig`, `openssl`, and packet captures  
-- Understanding how VPNs affect DNS egress
+- Understanding how VPNs affect DNS egress  
 
 It’s a clean, auditable example of running real infrastructure instead of relying on managed DNS or opaque services.
 
@@ -173,6 +201,14 @@ I’ve spent more than a decade teaching online, which means constant communicat
 # Outside the Screen
 
 I build small synthesizers in hardware and software — from 555-timer circuits to WebAudio/Three.js tools — and I enjoy breaking things safely to understand them better.
+
+---
+
+# Direction
+
+- Expanding log-based systems into more structured event pipelines  
+- Extending DNS infrastructure into filtering and policy control  
+- Building inspectable authentication and identity flows  
 
 ---
 
