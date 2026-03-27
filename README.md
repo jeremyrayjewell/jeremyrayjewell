@@ -8,6 +8,29 @@ GitHub is where I keep a working record of these activities — experiments, too
 
 ---
 
+# Digital Systems Focus
+
+My work centers on:
+
+- Observability of real-world systems (logs, network traffic, DNS behavior)
+- Security as a property of system design, not just defensive tooling
+- Lightweight, inspectable infrastructure over opaque managed services
+- Browser-based computation and media systems as programmable environments
+
+These projects are designed to be small, auditable, and reproducible — 
+so their behavior can be understood, tested, and extended.
+
+---
+
+# Public Contributions
+
+- Contributor to OWASP Cheat Sheet Series  
+  - Added "Email Validation and Verification in Identity Systems"  
+  - Focus: identity security, normalization, and verification flows  
+  - PR: https://github.com/OWASP/CheatSheetSeries/pull/2072
+
+---
+
 # Tech Stack
 
 **Languages & Scripting**  
