@@ -4,6 +4,8 @@ I’m Jeremy. I build and document small, real-world digital systems focused on 
 
 My GitHub is a working record of hands-on labs, infrastructure experiments, troubleshooting notes, security exercises, and digital systems projects. Current work includes a mini-SIEM / honeypot, a private DNS-over-TLS resolver, Linux and Windows troubleshooting labs, CTF writeups, and browser-based visualization systems using Three.js, WebAudio, TypeScript, and GLTF workflows.
 
+I also maintain [Aggregatron Systems](https://codeberg.org/aggregatron), a creative-technical project space for browser-based tools, WebAudio systems, visual experiments, small hardware experiments, technical demos, and documentation. Where this GitHub profile emphasizes IT, security, and systems practice, Aggregatron collects the creative-code and public-facing digital systems side of the same work.
+
 My focus is practical: build small systems, observe their behavior, document what happens, and explain the results clearly.
 
 ---
@@ -212,7 +214,9 @@ TryHackMe, OverTheWire, OWASP, and related exercises with emphasis on enumeratio
 
 Browser-based realtime rendering and media-system experiments using WebAudio, shaders, procedural graphics, and interactive browser computation.
 
-These projects increasingly serve as foundations for more structured visualization and technical presentation systems.
+These projects increasingly serve as foundations for more structured visualization, creative software, technical presentation systems, and Aggregatron-related browser tools.
+
+Related creative-technical work is collected at [Aggregatron Systems](https://codeberg.org/aggregatron), with a public landing page at [aggregatron.codeberg.page](https://aggregatron.codeberg.page).
 
 ---
 
@@ -279,5 +283,6 @@ Current long-term interests include:
 # Links
 
 [GitHub](https://github.com/jeremyrayjewell)  
+[Aggregatron Systems](https://codeberg.org/aggregatron)  
 [LinkedIn](https://www.linkedin.com/in/jeremyrayjewell)  
 [HackerNoon](https://hackernoon.com/u/jeremyrayjewell)
