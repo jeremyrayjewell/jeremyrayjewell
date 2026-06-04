@@ -1,33 +1,33 @@
 # Welcome
 
-I’m Jeremy. I build and analyze small, real-world digital systems — focusing on network behavior, observable infrastructure, realtime browser-based visualization, and interactive technical presentation.
+I’m Jeremy. I build and document small, real-world digital systems focused on IT support, networking, security operations, observability, and browser-based technical presentation.
 
-My work combines practical system investigation (logs, networking, infrastructure) with the development of small, focused tools for understanding how software behaves in real environments. I also build browser-based visualization and media systems using Three.js, WebAudio, and GLTF-based rendering workflows as part of my Aggregatron and industrial visualization projects.
+My GitHub is a working record of hands-on labs, infrastructure experiments, troubleshooting notes, security exercises, and digital systems projects. Current work includes a mini-SIEM / honeypot, a private DNS-over-TLS resolver, Linux and Windows troubleshooting labs, CTF writeups, and browser-based visualization systems using Three.js, WebAudio, TypeScript, and GLTF workflows.
 
-GitHub is where I keep a working record of these activities — experiments, tools, notes, and evolving systems — rather than a polished portfolio.
+My focus is practical: build small systems, observe their behavior, document what happens, and explain the results clearly.
 
 ---
 
-# Digital Systems Focus
+# Technical Focus
 
 My work centers on:
 
-- Observability of real-world systems (logs, network traffic, DNS behavior)
-- Security as a property of system design, not just defensive tooling
+- IT support and systems troubleshooting across Linux, Windows, browsers, networking, and remote tools
+- Security operations fundamentals: logs, alerts, SIEM workflows, honeypots, and incident notes
+- Network behavior, DNS infrastructure, packet flow, SSH, VPNs, and service exposure
 - Lightweight, inspectable infrastructure over opaque managed services
-- Browser-based computation and realtime rendering as programmable environments
-- Industrial visualization and interactive technical presentation using Three.js and GLTF workflows
-- Small, understandable systems with explicit interaction and rendering pipelines
+- Browser-based visualization and technical presentation using Three.js, WebAudio, TypeScript, and GLTF workflows
+- Clear documentation that explains the problem, system behavior, troubleshooting process, and outcome
 
-These projects are designed to be small, auditable, and reproducible so their behavior can be understood, tested, extended, and communicated clearly.
+These projects are designed to be small, auditable, reproducible, and easy to explain.
 
 ---
 
 # Public Contributions
 
-- Contributor to OWASP Cheat Sheet Series  
-  - Added "Email Validation and Verification in Identity Systems"  
-  - Focus: identity security, normalization, and verification flows  
+- Contributor to OWASP Cheat Sheet Series
+  - Added "Email Validation and Verification in Identity Systems"
+  - Focus: identity security, normalization, verification flows, and safer account-handling logic
   - PR: https://github.com/OWASP/CheatSheetSeries/pull/2072
 
 ---
@@ -70,111 +70,69 @@ These projects are designed to be small, auditable, and reproducible so their be
 
 # Current Focus
 
-I prioritize understanding systems end-to-end (network → service → application → interaction layer) rather than isolated tools.
+I prioritize understanding systems end-to-end: network behavior, service configuration, application behavior, logs, user interaction, and documentation.
 
 Current areas of focus include:
 
-- Realtime browser-based industrial visualization
-- GLTF-driven rendering pipelines and interactive product presentation
-- Lightweight telemetry and annotation systems for technical demos
 - Extending my mini-SIEM / honeypot and reviewing the traffic it collects
-- Troubleshooting Linux and Windows systems (networking, permissions, services)
-- Building Python and JavaScript tools for:
-  - network behavior
-  - authentication flows
-  - encryption basics
-  - telemetry presentation
-  - log parsing and filtering
-- Running and testing my own DNS infrastructure (recursive DNS, DNSSEC, DNS-over-TLS)
+- Troubleshooting Linux and Windows systems, including networking, permissions, services, and remote access
+- Running and testing my own DNS infrastructure, including recursive DNS, DNSSEC, and DNS-over-TLS
+- Practicing log parsing, filtering, alert review, and basic incident notes
+- Building Python and JavaScript tools for network behavior, authentication flows, encryption basics, telemetry presentation, and log analysis
+- Developing realtime browser-based industrial visualization systems
+- Working with GLTF-driven rendering pipelines and interactive technical presentation workflows
 - Practicing clear “problem → system → behavior → outcome” documentation
 
 I run a home lab and use GitHub to track the work chronologically.
 
 ---
 
-# Key Projects
-
 # Selected Systems
 
-- industrial-object-viewer
-- mini-siem-dashboard  
-- secure-dns-resolver  
+## [Mini SIEM Dashboard & Honeypot](https://github.com/jeremyrayjewell/mini-siem-dashboard)
 
-# Supporting Work
+Python · JavaScript · Flask · TCP listeners · JSON logging · Dashboard
 
-- cyber_journal  
-- CTF write-ups  
-- Three.js + WebAudio experiments  
+A compact SOC-style lab that exposes fake TCP services, records unsolicited traffic, and feeds a lightweight dashboard for log review and pattern analysis.
 
----
+The system exposes fake services such as SSH, FTP, RDP, MySQL, Redis, and MongoDB on high ports, writes structured events to JSON, and displays summary data in a browser-based dashboard.
 
-## [industrial-object-viewer](https://github.com/jeremyrayjewell/industrial-object-viewer)
+Event fields include:
 
-React · Three.js · TypeScript · FastAPI · GLTF
+- timestamp
+- IP address
+- port
+- source port
+- protocol
+- event type
+- banner sent
+- user agent
+- message
 
-A browser-based industrial visualization framework for interactive product presentation, technical demonstrations, and exporter-facing machine explainers.
-
-The project focuses on:
-
-- GLTF-ready rendering architecture
-- manifest-driven machine definitions
-- exploded-view interaction
-- annotation overlays
-- telemetry visualization
-- browser-based technical presentation workflows
-
-The current system uses:
-
-- React Three Fiber
-- Three.js
-- TypeScript
-- FastAPI
-- metadata-driven machine manifests
-- mesh-binding interaction systems
-
-The architecture is designed around a machine pipeline:
-
-MachineManifest → Renderer → Mesh Binding → Interaction Layer → Annotation System
-
-The long-term direction is focused on browser-native industrial visualization and realtime technical communication rather than entertainment-oriented 3D systems.
-
-> [Repo: `industrial-object-viewer`](https://github.com/jeremyrayjewell/industrial-object-viewer)
-
----
-
-## [Mini SIEM Dashboard & Honeypot (Python + JS)](https://github.com/jeremyrayjewell/mini-siem-dashboard)
-
-Python + JavaScript
-
-A small system that exposes fake TCP services (SSH, FTP, RDP, MySQL, Redis, MongoDB on high ports), writes structured events to JSON, and feeds a lightweight JS dashboard.
-
-- Backend: Flask with custom TCP listeners
-- Event fields: timestamp, ip, port, src_port, protocol, event_type, banner_sent, user_agent, message
-- Frontend: polls `/api/stats` for totals, top IPs, protocol/port breakdowns, and recent events
-- Deployment: containerized; runs as a small cloud service with a static dashboard
-- Captures repeated SSH/FTP probing patterns across multiple IP ranges
+The dashboard polls `/api/stats` for totals, top IPs, protocol and port breakdowns, and recent events.
 
 ### Operational Notes
 
 - Deployed as a live containerized service
 - Generates real unsolicited traffic from internet scanning activity
-- Logs used for repeated analysis and pattern comparison
+- Captures repeated SSH/FTP probing patterns across multiple IP ranges
+- Used for log triage, alert review, and repeated pattern comparison
 
-It serves as a compact SOC-style lab for generating traffic and practicing log triage.
-
-> [Repo: `mini-siem-dashboard`](https://github.com/jeremyrayjewell/mini-siem-dashboard)
+> Repo: [`mini-siem-dashboard`](https://github.com/jeremyrayjewell/mini-siem-dashboard)
 
 ---
 
-## [Private DNS-over-TLS Resolver (Unbound)](https://github.com/jeremyrayjewell/secure-dns-resolver)
+## [Private DNS-over-TLS Resolver](https://github.com/jeremyrayjewell/secure-dns-resolver)
 
-Unbound · DNS · TLS · DNSSEC
+Unbound · DNS · TLS · DNSSEC · Docker
 
 A self-hosted recursive DNS resolver that exposes DNS-over-TLS and performs full DNSSEC validation.
 
 Built to understand DNS infrastructure at the protocol level rather than relying entirely on managed services.
 
-- Recursive resolution (no forwarding by default)
+The resolver supports:
+
+- Recursive resolution with no forwarding by default
 - DNSSEC chain validation
 - DNS-over-TLS on TCP/8853
 - Plain DNS on 8053 for testing
@@ -186,28 +144,67 @@ Built to understand DNS infrastructure at the protocol level rather than relying
 - Public-facing resolver testable via `dig`
 - Performs real DNSSEC validation chains
 - TLS endpoint verifiable via `openssl`
+- Used for packet capture analysis, service testing, DNS flow review, and infrastructure troubleshooting
 
 Used to practice:
 
-- DNS packet flow (root → TLD → authoritative)
+- DNS packet flow from root to TLD to authoritative servers
 - TLS configuration and verification
 - Service deployment and health checks
 - Packet capture analysis
 - DNS egress behavior across different environments
 
-> [Repo: `secure-dns-resolver`](https://github.com/jeremyrayjewell/secure-dns-resolver)
+> Repo: [`secure-dns-resolver`](https://github.com/jeremyrayjewell/secure-dns-resolver)
 
 ---
 
+## [Industrial Object Viewer](https://github.com/jeremyrayjewell/industrial-object-viewer)
+
+React · Three.js · TypeScript · FastAPI · GLTF
+
+A browser-based industrial visualization framework for interactive product presentation, technical demonstrations, and exporter-facing machine explainers.
+
+The project focuses on:
+
+- GLTF-ready rendering architecture
+- Manifest-driven machine definitions
+- Exploded-view interaction
+- Annotation overlays
+- Telemetry visualization
+- Browser-based technical presentation workflows
+
+The current system uses:
+
+- React Three Fiber
+- Three.js
+- TypeScript
+- FastAPI
+- Metadata-driven machine manifests
+- Mesh-binding interaction systems
+
+The architecture is designed around a machine pipeline:
+
+MachineManifest → Renderer → Mesh Binding → Interaction Layer → Annotation System
+
+The long-term direction is focused on browser-native industrial visualization and realtime technical communication rather than entertainment-oriented 3D systems.
+
+> Repo: [`industrial-object-viewer`](https://github.com/jeremyrayjewell/industrial-object-viewer)
+
+---
+
+# Supporting Work
+
 ## [cyber_journal](https://github.com/jeremyrayjewell/cyber_journal)
 
-A running log of labs, notes, packet captures, troubleshooting sessions, infrastructure experiments, and protocol-focused learning work.
+A running log of labs, notes, packet captures, troubleshooting sessions, infrastructure experiments, protocol-focused learning work, and CTF writeups.
+
+The emphasis is on documenting process clearly: what the problem was, what tools were used, what behavior was observed, and what conclusions can be drawn.
 
 ---
 
 ## [CTF Write-ups](https://github.com/jeremyrayjewell/cyber_journal/tree/main/writeups)
 
-TryHackMe, OverTheWire, OWASP, and related exercises with emphasis on enumeration, protocol understanding, and root-cause analysis rather than shortcuts.
+TryHackMe, OverTheWire, OWASP, and related exercises with emphasis on enumeration, protocol understanding, troubleshooting logic, and root-cause analysis rather than shortcuts.
 
 ---
 
@@ -231,21 +228,21 @@ These projects increasingly serve as foundations for more structured visualizati
 
 # Skills & Tools
 
+## IT Support / Systems
+
+Linux · Windows · WSL · Docker · VirtualBox · basic server administration · browser troubleshooting · remote support · service configuration · permissions · connectivity troubleshooting · documentation
+
 ## Security / Infrastructure
 
-Network scanning · packet analysis · DNS infrastructure · SSH workflows · VPN and tunneling basics · honeypot systems · log analysis · troubleshooting distributed systems
+Network scanning · packet analysis · DNS infrastructure · SSH workflows · VPN and tunneling basics · honeypot systems · SIEM concepts · log analysis · vulnerability assessment · hardening · troubleshooting distributed systems
+
+## Programming / Automation
+
+Python scripting · JavaScript · TypeScript · Bash · log parsing · CLI tools · APIs · React · FastAPI · Flask · Git · lightweight automation systems
 
 ## Visualization / Frontend
 
 Three.js · React Three Fiber · WebAudio · realtime rendering · GLTF workflows · interaction systems · technical presentation interfaces · telemetry overlays
-
-## Programming / Automation
-
-Python scripting · JavaScript/TypeScript · log parsing · CLI tools · APIs · React · FastAPI · Git · lightweight automation systems
-
-## Systems
-
-Linux · Windows · WSL · Docker · VirtualBox · basic server administration · network services · browser-based runtime systems
 
 ---
 
@@ -253,13 +250,13 @@ Linux · Windows · WSL · Docker · VirtualBox · basic server administration �
 
 I’ve spent more than a decade teaching online, which means constant communication, time-pressure troubleshooting, and adapting explanations to different technical and cultural contexts.
 
-I also write essays and technical notes, and I’m fluent in Spanish. My academic background in philosophy and history of ideas influences how I approach systems, abstraction, technical communication, and problem decomposition.
+I also write essays, technical notes, documentation, and editorial copy. My academic background in philosophy and history of ideas influences how I approach systems, abstraction, technical communication, and problem decomposition.
 
 ---
 
 # Outside the Screen
 
-I build small synthesizers in hardware and software — from 555-timer circuits to WebAudio/Three.js systems — and I enjoy understanding systems by building, testing, breaking, and restructuring them.
+I build small synthesizers in hardware and software, from 555-timer circuits to WebAudio and Three.js systems. I enjoy understanding systems by building, testing, breaking, documenting, and restructuring them.
 
 ---
 
@@ -267,12 +264,15 @@ I build small synthesizers in hardware and software — from 555-timer circuits 
 
 Current long-term interests include:
 
-- Browser-native industrial visualization
-- GLTF-driven technical presentation systems
-- Realtime telemetry and subsystem visualization
+- IT support and systems troubleshooting
+- Security operations fundamentals
 - Structured event pipelines and observability systems
 - Inspectable authentication and identity flows
 - Lightweight infrastructure with explicit operational behavior
+- Browser-native industrial visualization
+- GLTF-driven technical presentation systems
+- Realtime telemetry and subsystem visualization
+- Technical documentation that makes system behavior understandable
 
 ---
 
